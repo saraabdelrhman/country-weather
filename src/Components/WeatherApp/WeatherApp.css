@@ -1,0 +1,100 @@
+.container{
+    padding-top: 20px;
+    background-image: linear-gradient(180deg,#080229 0%,#453893 100%);
+width: 100%;
+    height: 100vh;
+         max-width: 100%
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+ 
+}
+.nav input {
+    width: 400px;
+    height: 50px;
+    border:0px solid;
+    border-radius: 40px;
+    background-color: white;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 30px;
+   
+}
+.font{
+font-size: 85px;
+}
+.location{
+    font-size: 50px;
+}
+
+.search_icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+   
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Add cursor pointer for better user experience */
+}
+
+/* Define the keyframe animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation on hover */
+.search_icon:hover {
+    animation: pulse 0.5s infinite;
+    box-shadow: 2px 0px 5px 5px rgb(255, 255, 196);
+
+  
+}
+
+/* HTML: <div class="loader"></div> */
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #453893;
+    height: 100vh;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* margin-top: 300px; */
+    border: 8px solid #0000;
+    border-right-color: #ffa50097;
+    position: relative;
+    animation: l24 1s infinite linear;
+   
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+  }
+  .loader:after {
+    animation-duration: 4s;
+  }
+  
